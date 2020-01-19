@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let total_1, x, nro; 
+        total_1 = 0 ;
+        x = 0;
+        while (x < 3 )
+        {
+          nro = prompt('Ingrese valor de la primera lista:','');
+          nro = parseInt(nro);
+          total_1 = total_1 + nro;
+          x = x+1;
+        }
+        let total_2 = 0;
+        x = 0;
+        while( x < 3)
+        {
+          nro = prompt('Ingrese valor de la segunda lista:','');
+          nro = parseInt(nro);
+          total_2 = total_2 + nro;
+          x = x + 1;
+        }
+        if (total_1 > total_2)
+        {
+          document.write('Tiene mayor valor la lista 1');
+        }
+        else
+        {
+          if (total_1 < total_2)
+          {
+            document.write('Tiene mayor valor la lista 2');
+          }
+          else
+          {
+            document.write('Tienen el mismo valor acumulado las dos listas');
+          }
+        }
+      </script>
+    
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!-- Se ingresan un conjunto de 5 alturas de personas por teclado. 
+Mostrar la altura promedio de las personas. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script> 
+        let altura, x, promedio
+        x = 1
+        suma = 0
+        while (x <= 5)
+        {
+            altura = prompt('ingrese altura', '')
+            altura = parseFloat(altura)
+            suma = altura + suma
+            
+            x = x + 1
+
+        }
+        promedio = suma/5 
+        document.write('la altura promedio es ' + promedio)
+    </script>
+</body>
+</html>

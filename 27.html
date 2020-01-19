@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let number, x, cant_1, cant_2
+        x = 0
+        cant_1 = 0 
+        cant_2 = 0
+        
+        while (x < 5) 
+        {
+            number = prompt('ingrese hasta cinco valores', '')
+            number = parseInt(number)
+            
+            if (number%2 == 0)
+            {
+               cant_1 = cant_1 + 1
+            }
+            else if (number%2 == 1)
+            {
+                cant_2 = cant_2 + 1
+            }
+            x = x + 1
+        }
+
+        document.write('los números pares son ' + cant_1)
+        document.write('<br>')
+        document.write('los números impares son ' + cant_2)
+       
+
+    
+    </script>
+</body>
+</html>
